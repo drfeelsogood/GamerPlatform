@@ -43,6 +43,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -140,13 +148,101 @@
     <Content Include="Areas\Admin\Scripts\skycons.js" />
     <Content Include="Areas\Admin\Scripts\uisearch.js" />
     <Content Include="Areas\Admin\Scripts\wow.min.js" />
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
+    <Content Include="Content\css\price-range.css" />
+    <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\404\404.png" />
+    <Content Include="Content\images\blog\blog-one.jpg" />
+    <Content Include="Content\images\blog\blog-three.jpg" />
+    <Content Include="Content\images\blog\blog-two.jpg" />
+    <Content Include="Content\images\blog\man-four.jpg" />
+    <Content Include="Content\images\blog\man-one.jpg" />
+    <Content Include="Content\images\blog\man-three.jpg" />
+    <Content Include="Content\images\blog\man-two.jpg" />
+    <Content Include="Content\images\blog\socials.png" />
+    <Content Include="Content\images\cart\one.png" />
+    <Content Include="Content\images\cart\three.png" />
+    <Content Include="Content\images\cart\two.png" />
+    <Content Include="Content\images\home\bg_border.png" />
+    <Content Include="Content\images\home\gallery1.jpg" />
+    <Content Include="Content\images\home\gallery2.jpg" />
+    <Content Include="Content\images\home\gallery3.jpg" />
+    <Content Include="Content\images\home\gallery4.jpg" />
+    <Content Include="Content\images\home\girl1.jpg" />
+    <Content Include="Content\images\home\girl2.jpg" />
+    <Content Include="Content\images\home\girl3.jpg" />
+    <Content Include="Content\images\home\iframe1.png" />
+    <Content Include="Content\images\home\iframe2.png" />
+    <Content Include="Content\images\home\iframe3.png" />
+    <Content Include="Content\images\home\iframe4.png" />
+    <Content Include="Content\images\home\logo.png" />
+    <Content Include="Content\images\home\map.png" />
+    <Content Include="Content\images\home\new.png" />
+    <Content Include="Content\images\home\partner1.png" />
+    <Content Include="Content\images\home\partner2.png" />
+    <Content Include="Content\images\home\partner3.png" />
+    <Content Include="Content\images\home\partner4.png" />
+    <Content Include="Content\images\home\pricing.png" />
+    <Content Include="Content\images\home\product1.jpg" />
+    <Content Include="Content\images\home\product2.jpg" />
+    <Content Include="Content\images\home\product3.jpg" />
+    <Content Include="Content\images\home\product4.jpg" />
+    <Content Include="Content\images\home\product5.jpg" />
+    <Content Include="Content\images\home\product6.jpg" />
+    <Content Include="Content\images\home\recommend1.jpg" />
+    <Content Include="Content\images\home\recommend2.jpg" />
+    <Content Include="Content\images\home\recommend3.jpg" />
+    <Content Include="Content\images\home\sale.png" />
+    <Content Include="Content\images\home\searchicon.png" />
+    <Content Include="Content\images\home\shipping.jpg" />
+    <Content Include="Content\images\product-details\1.jpg" />
+    <Content Include="Content\images\product-details\new.jpg" />
+    <Content Include="Content\images\product-details\rating.png" />
+    <Content Include="Content\images\product-details\share.png" />
+    <Content Include="Content\images\product-details\similar1.jpg" />
+    <Content Include="Content\images\product-details\similar2.jpg" />
+    <Content Include="Content\images\product-details\similar3.jpg" />
+    <Content Include="Content\images\shop\advertisement.jpg" />
+    <Content Include="Content\images\shop\product10.jpg" />
+    <Content Include="Content\images\shop\product11.jpg" />
+    <Content Include="Content\images\shop\product12.jpg" />
+    <Content Include="Content\images\shop\product7.jpg" />
+    <Content Include="Content\images\shop\product8.jpg" />
+    <Content Include="Content\images\shop\product9.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="HTML\404.html" />
+    <Content Include="HTML\blog-single.html" />
+    <Content Include="HTML\blog.html" />
+    <Content Include="HTML\cart.html" />
+    <Content Include="HTML\checkout.html" />
+    <Content Include="HTML\contact-us.html" />
+    <Content Include="HTML\index.html" />
+    <Content Include="HTML\login.html" />
+    <Content Include="HTML\product-details.html" />
+    <Content Include="HTML\shop.html" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\contact.js" />
+    <Content Include="Scripts\gmaps.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\jquery.scrollUp.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\price-range.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SiteBaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -156,7 +252,7 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Areas\Admin\Views\Shared\_AdminLayoutPage1.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminShared\_AdminLayoutPage1.cshtml" />
     <Content Include="Areas\Admin\Content\Fonts\digital-7-webfont.eot" />
     <Content Include="Areas\Admin\Content\Fonts\digital-7-webfont.ttf" />
     <Content Include="Areas\Admin\Content\Fonts\digital-7-webfont.woff" />
@@ -183,6 +279,13 @@
     <Content Include="Areas\Admin\Content\Fonts\weathericons-regular-webfont.woff" />
     <Content Include="Areas\Admin\Content\Fonts\WeatherIcons-Regular.otf" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Views\SiteShared\SiteLayoutPage.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\SiteShared\SitePartials\BilgisayarPartial.cshtml" />
+    <Content Include="Views\SiteShared\SitePartials\KonsolPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -194,8 +297,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Default\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\SiteBase\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
